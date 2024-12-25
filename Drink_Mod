@@ -1,0 +1,38 @@
+###Money Hack###
+var bank = Connect("FinanceComputer")
+var user = GetUser()
+var slot = Connect("Casino_Floor2_ArmedBandit_8")
+var balance = bank.GetBalanceForPerson (user)
+var door = Connect("Hotel_Lobby_ComputerCashier")
+
+
+if slot.Random() > 0.995
+    #slot.PlaySound("CasinoWin")
+    bank.ChangeBalance(user, 1000)
+
+    else if slot.Random() > 0.97
+        #slot.PlaySound("CasinoWin")
+        bank.ChangeBalance(user, 100)
+    
+    else if slot.Random() > 0.2
+        #slot.PlaySound("CasinoWin")
+        bank.ChangeBalance(user, 10)
+    
+else
+    #slot.PlaySound("CasinoLose")
+    Say("R.I.P. Bozo")
+end
+
+###Stat Hack###
+Var tap = Connect("Hotel_Bathroom_Poor_WaterTap_Poor_WaterTap_1")
+    ###Make sure you fill drink at least once from this tap
+    ###or the can wont refill
+
+Sleepiness(-25)
+Smelliness(-50)
+Charisma(100)
+Drunkenness(-25)
+Corruption(-25)
+
+tap.SetLiquidAmount(300)
+
