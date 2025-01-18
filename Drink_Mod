@@ -27,6 +27,7 @@ end
 Var tap = Connect("Hotel_Bathroom_Poor_WaterTap_Poor_WaterTap_1")
     ###Make sure you fill drink at least once from this tap
     ###or the can wont refill
+    ###tap is hotel bathroom sink on the right
 
 Sleepiness(-25)
 Smelliness(-50)
